@@ -211,14 +211,80 @@ Se realiza una solicitud POST al API utilizando la función `requests.post()` de
 
 Se verifica si la solicitud fue exitosa comprobando el código de estado de la respuesta. Si la solicitud fue exitosa, se muestra el resultado de la predicción. En caso de falla, se muestra el mensaje de error.
 
-## Uso de la API
+## Uso del API
 
-[Descripción detallada de cómo usar la API, incluyendo endpoints, parámetros esperados, formatos de respuesta, etc.]
+El API proporciona un servicio de predicción basado en un modelo de aprendizaje automático entrenado para predecir ciertos resultados basados en características específicas de los solicitantes de financiamiento. A continuación, se detallan los pasos para utilizar el API:
 
-## Contribuciones y Soporte
+### 1. Enviar una solicitud HTTP
 
-[Información sobre cómo contribuir al proyecto, reportar problemas o buscar soporte.]
+El API acepta solicitudes HTTP POST que contengan datos en formato JSON. 
 
+### 2. Estructura de los datos
+
+Los datos deben incluir los siguientes campos:
+
+- `cve_mun`: Clave del municipio donde se ejerció el financiamiento.
+- `intermediario_financiero`: Entidad financiera que otorgó el financiamiento.
+- `sexo`: Género del solicitante del financiamiento (1 para hombre, 2 para mujer).
+- `edad_rango`: Rango de edad del solicitante.
+- `ingresos_rango`: Rango de ingresos mensuales del solicitante.
+- `vivienda_valor`: Valor de la vivienda clasificado en categorías específicas.
+- `acciones`: Número de acciones relacionadas con el financiamiento.
+
+### 3. Realizar la solicitud
+
+Utiliza el código proporcionado en Python o Curl para enviar la solicitud al endpoint del API. Es importante  incluir la URL correcta y los datos de entrada en el formato requerido.
+
+### Ejemplo en Python:
+
+```python
+import requests
+
+# URL del endpoint de la Cloud Function
+url = "https://us-central1-glass-watch-411703.cloudfunctions.net/function-1"
+
+# Datos de entrada para la solicitud
+data = {
+    "cve_mun": 2.0,
+    "intermediario_financiero": 4,
+    "sexo": 1.0,
+    "edad_rango": 2.0,
+    "ingresos_rango": 1.0,
+    "vivienda_valor": 4.0,
+    "acciones": 0
+}
+
+# Encabezados de la solicitud
+headers = {
+    "Content-Type": "application/json"
+}
+
+# Realizar la solicitud POST al API
+response = requests.post(url, json=data, headers=headers)
+
+# Verificar si la solicitud fue exitosa
+if response.status_code == 200:
+    # Mostrar el resultado de la predicción
+    print("Resultado de la predicción:", response.json())
+else:
+    # Mostrar el mensaje de error si la solicitud falló
+    print("La solicitud falló con el código de estado:", response.status_code)
+    print("Mensaje de error:", response.text)
+
+```
+```curl
+curl -m 70 -X POST https://us-central1-glass-watch-411703.cloudfunctions.net/function-1 \
+-H "Content-Type: application/json" \
+-d '{
+    "cve_mun": 2.0,
+    "intermediario_financiero": 4,
+    "sexo": 1.0,
+    "edad_rango": 2.0,
+    "ingresos_rango": 1.0,
+    "vivienda_valor": 4.0,
+    "acciones": 0
+}'
+```
 
 ## Autores
 
