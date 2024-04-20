@@ -38,13 +38,13 @@ La carpeta `Data` contiene tanto los conjuntos de datos utilizados (`Datasets`) 
 
 ### Diccionarios
 
-- `diccionario_cnbv.csv`: Describe las columnas presentes en el dataset proporcionado por la Comisión Nacional Bancaria y de Valores.
-- `diccionario_financiamiento.csv`: Contiene la descripción de las columnas relacionadas con el financiamiento de la vivienda.
+- `diccionario_cnbv.csv`: Describe las columnas presentes en el dataset proporcionado por la Comisión Nacional Bancaria y de Valores sobre financiamientos privados.
+- `diccionario_financiamiento.csv`: Contiene la descripción de las columnas relacionadas con el financiamiento público de la vivienda.
 
 ### Datasets
 
-- `financiamientos_full_CDMX.csv`: Conjunto de datos que incluye información detallada sobre los financiamientos en la Ciudad de México.
-- `cnbv_full_CDMX.csv`: Datos de créditos otorgados relacionados con la vivienda recopilados por la CNBV.
+- `financiamientos_full_CDMX.csv`: Conjunto de datos que incluye información detallada sobre los financiamientos públicos en la Ciudad de México.
+- `cnbv_full_CDMX.csv`: Datos de créditos otorgados relacionados por instituciones privadas para la vivienda, recopilados por la CNBV.
 
 ## Code
 
