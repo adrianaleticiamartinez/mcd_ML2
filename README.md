@@ -53,11 +53,11 @@ La carpeta `Data` contiene tanto los conjuntos de datos utilizados (`Datasets`) 
 
 Se incluyen todos los Jupyter Notebooks desarrollados durante el proyecto.
 
-### Proyecto Final ML2 AM.ipynb
+## Proyecto Final ML2 AM.ipynb
 
 Este Jupyter Notebook desarrolla un clasificador utilizando el algoritmo XGBoost para predecir la aprobación de financiamientos para vivienda en la Ciudad de México. El modelo se basa en datos socioeconómicos, demográficos y características de la vivienda de los solicitantes.
 
-#### Descripción del Proceso
+### Descripción del Proceso
 
 El proceso se divide en las siguientes etapas:
 
@@ -83,11 +83,11 @@ Se entrena un modelo de clasificación utilizando el algoritmo XGBoost. Se divid
 Exportación del Modelo
 Finalmente, se exporta el modelo entrenado como un archivo pickle para su uso futuro, así como su posterioir productivización en GCP.
 
-### API.ipynb
+## API.ipynb
 
 Notebook de referencia con el código preliminar que se utilizó antes de implementar la API en el entorno de Google Cloud, en el se implementa una API utilizando Flask para predecir la aprobación de financiamientos para vivienda en la Ciudad de México. El modelo utilizado es un modelo de clasificación entrenado previamente y cargado al inicio de la aplicación.
 
-#### Descripción del Proceso
+### Descripción del Proceso
 
 El proceso se describe en las siguientes etapas:
 
@@ -96,7 +96,7 @@ El proceso se describe en las siguientes etapas:
 3. **Predicción:** Utilizando los datos recibidos en la solicitud, se realiza una predicción utilizando el modelo cargado.
 4. **Respuesta:** La predicción se devuelve como respuesta en formato JSON.
 
-#### Estructura del Código
+### Estructura del Código
 
 ### Importación de Librerías
 
@@ -123,11 +123,11 @@ La predicción se devuelve como respuesta en formato JSON, incluyendo la clase p
 La API puede ser utilizada enviando una solicitud POST a la ruta '/predict' con los datos de entrada en formato JSON. La respuesta de la API incluirá la clase predicha para los datos de entrada proporcionados.
 
 
-### Prueba modelo.ipynb
+## Prueba modelo.ipynb
 
 Validación del modelo y pruebas de su funcionamiento antes de la importación al Google Cloud Storage.
 
-### Prueba API.ipynb
+## Prueba API.ipynb
 
 Demostración de cómo consumir la API desplegada en Google Cloud Platform, con ejemplos de llamadas y respuestas.
 
