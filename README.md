@@ -7,6 +7,12 @@ Alumno: Adriana Leticia Martinez Estrada
 Este repositorio contiene los datasets, códigos y documentación del proyecto para la predicción de financiamiento de viviendas en la Ciudad de México, el cual ha sido desplegado como una API pública en Google Cloud Platform.
 
 ## Estructura del Repositorio
+GCP_API/
+
+|-main.py
+
+|- requirements.txt
+
 Data/
 
 |- Diccionarios/
@@ -35,7 +41,24 @@ Output/
 
 |- xgboost_model.pkl
 
+## GCP_API
+Esta carpeta contiene los archivos necesarios para implementar y utilizar la API de predicción de financiamiento de vivienda en Google Cloud Platform (GCP) mediante Google Cloud Functions.
 
+### Contenido
+
+- **`api.py`:** Este archivo contiene el código de la API implementada en Google Cloud Functions utilizando Flask para manejar las solicitudes HTTP y el modelo entrenado para realizar predicciones.
+- **`requirements.txt`:** Archivo de texto que especifica las dependencias necesarias para ejecutar la API en Google Cloud Functions. Las bibliotecas incluidas en este archivo son instaladas automáticamente por Google Cloud Functions al implementar la función.
+- **`xgboost_model.pkl`:** Archivo binario que contiene el modelo de aprendizaje automático entrenado. Este modelo se utiliza para realizar predicciones sobre los datos de entrada proporcionados a la API.
+
+### Configuración y Uso
+
+1. **Requisitos de Instalación:** Antes de implementar la API en Google Cloud Platform, asegúrate de tener una cuenta de Google Cloud y haber configurado el entorno de desarrollo local con el SDK de Google Cloud.
+2. **Implementación en Google Cloud Functions:** Para desplegar la API en Google Cloud Functions, sigue los pasos proporcionados en la documentación de Google Cloud Platform.
+3. **Uso de la API:** Una vez desplegada, puedes hacer llamadas a la API utilizando el endpoint proporcionado por Google Cloud Functions. Envía datos de entrada en formato JSON al endpoint `/predict` y recibirás una respuesta con la predicción realizada por el modelo.
+
+### Dependencias
+
+Las dependencias de la API están especificadas en el archivo `requirements.txt` e incluyen las bibliotecas necesarias para ejecutar la API en Google Cloud Functions, como Flask y joblib.
 
 ## Data
 
