@@ -272,6 +272,8 @@ else:
     print("Mensaje de error:", response.text)
 
 ```
+### Ejemplo en CURL:
+
 ```curl
 curl -m 70 -X POST https://us-central1-glass-watch-411703.cloudfunctions.net/function-1 \
 -H "Content-Type: application/json" \
