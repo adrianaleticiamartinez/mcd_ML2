@@ -249,6 +249,12 @@ Los datos deben incluir los siguientes campos:
   
 | Valor | Descripción |
 | ------ | ----------- |
+| 1 | Instituto del Fondo Nacional de la Vivienda para los Trabajadores (INFONAVIT) |
+| 2 | Comisión Nacional Bancaria y de Valores (CNBV) |
+| 3 | Fondo de la Vivienda del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (FOVISSSTE) |
+| 4 | Sociedad Hipotecaria Federal (SHF) |
+| 5 | Comisión Nacional de Vivienda (CONAVI) |
+| 6 | Instituto de Vivienda de la Ciudad de México  (INVI) |
 | 40002 | Banamex |
 | 40012 | BBVA  |
 | 40014 | Santander |
