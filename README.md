@@ -126,10 +126,67 @@ La API puede ser utilizada enviando una solicitud POST a la ruta '/predict' con 
 ## Prueba modelo.ipynb
 
 Validación del modelo y pruebas de su funcionamiento antes de la importación al Google Cloud Storage.
+### Descripción del Proceso
+
+El proceso de prueba se describe en las siguientes etapas:
+
+1. **Carga del Modelo:** Se carga el modelo de predicción de financiamiento de vivienda previamente entrenado.
+2. **Generación de Datos de Prueba:** Se genera un conjunto de datos de prueba simulando un caso puntual de solicitud de financiamiento de vivienda.
+3. **Codificación de Variables Categóricas:** Las variables categóricas en los datos de prueba se codifican utilizando LabelEncoder.
+4. **Predicción:** Se realiza una predicción utilizando el modelo cargado y los datos de prueba generados.
+5. **Resultado de la Predicción:** Se muestra la clase predicha y, si el modelo predice probabilidades, también se muestran las probabilidades de pertenecer a cada clase.
+
+### Código
+
+#### Carga del Modelo
+
+Se carga el modelo de predicción de financiamiento de vivienda previamente entrenado desde el archivo 'xgboost_model.pkl'.
+
+#### Generación de Datos de Prueba
+
+Se genera un conjunto de datos de prueba en forma de un DataFrame de Pandas, simulando un caso puntual de solicitud de financiamiento de vivienda.
+
+#### Codificación de Variables Categóricas
+
+Las variables categóricas en los datos de prueba se codifican utilizando LabelEncoder para que puedan ser utilizadas por el modelo de predicción.
+
+#### Predicción
+
+Se realiza una predicción utilizando el modelo cargado y los datos de prueba generados.
+
+#### Resultado de la Predicción
+
+Se muestra la clase predicha para el caso puntual y, si el modelo predice probabilidades, también se muestran las probabilidades de pertenecer a cada clase.
 
 ## Prueba API.ipynb
 
 Demostración de cómo consumir la API desplegada en Google Cloud Platform, con ejemplos de llamadas y respuestas.
+### Descripción del Proceso
+
+El proceso de prueba se describe en las siguientes etapas:
+
+1. **Definición de la URL del Endpoint:** Se define la URL del endpoint de la Cloud Function donde está desplegada la API.
+2. **Datos de Entrada:** Se definen los datos de entrada para la solicitud, que representan un caso puntual de solicitud de financiamiento de vivienda.
+3. **Realización de la Solicitud:** Se realiza una solicitud POST al API utilizando los datos de entrada y los encabezados adecuados.
+4. **Verificación de la Respuesta:** Se verifica si la solicitud fue exitosa y se muestra el resultado de la predicción en caso de éxito. En caso de falla, se muestra el mensaje de error.
+
+### Código
+
+### Definición de la URL del Endpoint
+
+Se define la URL del endpoint de la Cloud Function donde está desplegada la API.
+
+#### Datos de Entrada
+
+Se definen los datos de entrada para la solicitud en forma de un diccionario de Python.
+
+#### Realización de la Solicitud
+
+Se realiza una solicitud POST al API utilizando la función `requests.post()` de la biblioteca `requests`, proporcionando los datos de entrada y los encabezados adecuados.
+
+#### Verificación de la Respuesta
+
+Se verifica si la solicitud fue exitosa comprobando el código de estado de la respuesta. Si la solicitud fue exitosa, se muestra el resultado de la predicción. En caso de falla, se muestra el mensaje de error.
 
 ## Uso de la API
 
