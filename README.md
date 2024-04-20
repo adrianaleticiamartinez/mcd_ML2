@@ -21,15 +21,15 @@ Data/
 
 | |- cnbv_full_CDMX.csv
 
-Code/
 
-|- Proyecto Final ML2 AM.ipynb
 
-|- API.ipynb
+|Proyecto Final ML2 AM.ipynb
 
-|- Prueba modelo.ipynb
+|API.ipynb
 
-|- Prueba API.ipynb
+|Prueba modelo.ipynb
+
+|Prueba API.ipynb
 
 Output/
 
@@ -51,9 +51,7 @@ La carpeta `Data` contiene tanto los conjuntos de datos utilizados (`Datasets`) 
 - `financiamientos_full_CDMX.csv`: Conjunto de datos que incluye información detallada sobre los financiamientos públicos en la Ciudad de México.
 - `cnbv_full_CDMX.csv`: Datos de créditos otorgados relacionados por instituciones privadas para la vivienda, recopilados por la CNBV.
 
-## Code
-
-La carpeta `Code` incluye todos los Jupyter Notebooks desarrollados durante el proyecto.
+Se incluyen todos los Jupyter Notebooks desarrollados durante el proyecto.
 
 ### Proyecto Final ML2 AM.ipynb
 
