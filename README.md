@@ -7,17 +7,29 @@ Este repositorio contiene los datasets, códigos y documentación del proyecto p
 
 ## Estructura del Repositorio
 Data/
+
 |- Diccionarios/
+
 | |- diccionario_cnbv.csv
+
 | |- diccionario_financiamiento.csv
+
 |- Datasets/
+
 | |- financiamientos_full_CDMX.csv
+
 | |- cnbv_full_CDMX.csv
+
 Code/
+
 |- Proyecto Final ML2 AM.ipynb
+
 |- API.ipynb
+
 |- Prueba modelo.ipynb
+
 |- Prueba API.ipynb
+
 
 
 ## Data
