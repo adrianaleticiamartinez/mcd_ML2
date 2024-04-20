@@ -225,20 +225,25 @@ Los datos deben incluir los siguientes campos:
 
 - `cve_mun`: Clave del municipio donde se ejerció el financiamiento. (Valores de 2.0 a 17.0)
 - `intermediario_financiero`: Entidad financiera que otorgó el financiamiento.
+  
 | Valor | Descripción |
-| ------| ----------- |
+| ------ | ----------- |
 | 40002 | Banamex |
 | 40012 | BBVA  |
 | 40014 | Santander |
 | 40021 | HSBC |
+
 - `sexo`: Género del solicitante del financiamiento (1 para hombre, 2 para mujer).
 - `edad_rango`: Rango de edad del solicitante.
+
 | Valor | Descripción |
 |------ |-------------|
 | 1 | 29  o menos |
 | 2 | 30 a 59  |
 | 3 | 60 o más |
+
 - `ingresos_rango`: Rango de ingresos de los acreditados expresados en Unidad de Medida y Actualización (UMA) mensuales
+
 | Valor | Descripción |
 | ------ | ------------- |
 | 1 | 2.6 o menos  |
@@ -249,14 +254,16 @@ Los datos deben incluir los siguientes campos:
 | 6 | Más de 12 |
 
 - `vivienda_valor`: Valor de la vivienda clasificado en categorías específicas.
+
 | Valor | Descripción |
 | ------ | ------------- |
 | 1 | Económica  |
 | 2 | Popular  |
 | 3 | Tradicional  |
 | 4 | Media  |
-| 5  | Residencial  |
+| 5 | Residencial  |
 | 6 | Residencial plus  |
+
 - `acciones`: Número de acciones relacionadas con el financiamiento. Valores enteros  en formato x.x
 
 
