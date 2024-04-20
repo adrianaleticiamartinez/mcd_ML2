@@ -224,6 +224,26 @@ El API acepta solicitudes HTTP POST que contengan datos en formato JSON.
 Los datos deben incluir los siguientes campos:
 
 - `cve_mun`: Clave del municipio donde se ejerció el financiamiento. (Valores de 2.0 a 17.0)
+| Valor | Descripción |
+| ------ | ----------- |
+|2.0  |  Azcapotzalco | 
+|3.0  |  Coyoacán | 
+|4.0  |  Cuajimalpa de Morelos	 | 
+|5.0  |  Gustavo A. Madero	 | 
+|6.0  |  Iztacalco | 
+|7.0  |  Iztapalapa | 
+|8.0  |  La Magdalena Contreras	 | 
+|9.0  |  Milpa Alta | 
+|10.0  |  Álvaro Obregón | 
+|11.0  |  Tláhuac | 
+|12.0  |  Tlalpan | 
+|13.0  |  Xochimilco | 
+|14.0  |  Benito Juárez | 
+|15.0  |  Cuauhtémoc | 
+|16.0  |  Miguel Hidalgo | 
+|17.0  |  Venustiano Carranza | 
+
+
 - `intermediario_financiero`: Entidad financiera que otorgó el financiamiento.
   
 | Valor | Descripción |
@@ -233,38 +253,38 @@ Los datos deben incluir los siguientes campos:
 | 40014 | Santander |
 | 40021 | HSBC |
 
-- `sexo`: Género del solicitante del financiamiento (1 para hombre, 2 para mujer).
+- `sexo`: Género del solicitante del financiamiento (1.0 para hombre, 2.0 para mujer).
 - `edad_rango`: Rango de edad del solicitante.
 
 | Valor | Descripción |
 |------ |-------------|
-| 1 | 29  o menos |
-| 2 | 30 a 59  |
-| 3 | 60 o más |
+| 1.0 | 29  o menos |
+| 2.0 | 30 a 59  |
+| 3.0 | 60 o más |
 
 - `ingresos_rango`: Rango de ingresos de los acreditados expresados en Unidad de Medida y Actualización (UMA) mensuales
 
 | Valor | Descripción |
 | ------ | ------------- |
-| 1 | 2.6 o menos  |
-| 2 | 2.61 a 4.00  |
-| 3 | 4.01 a 6.00 |
-| 4 | 6.01 a 9.00 |
-| 5 | 9.01 a 12.00  |
-| 6 | Más de 12 |
+| 1.0 | 2.6 o menos  |
+| 2.0 | 2.61 a 4.00  |
+| 3.0 | 4.01 a 6.00 |
+| 4.0 | 6.01 a 9.00 |
+| 5.0 | 9.01 a 12.00  |
+| 6.0 | Más de 12 |
 
 - `vivienda_valor`: Valor de la vivienda clasificado en categorías específicas.
 
 | Valor | Descripción |
 | ------ | ------------- |
-| 1 | Económica  |
-| 2 | Popular  |
-| 3 | Tradicional  |
-| 4 | Media  |
-| 5 | Residencial  |
-| 6 | Residencial plus  |
+| 1.0 | Económica  |
+| 2.0 | Popular  |
+| 3.0 | Tradicional  |
+| 4.0 | Media  |
+| 5.0 | Residencial  |
+| 6.0 | Residencial plus  |
 
-- `acciones`: Número de acciones relacionadas con el financiamiento. Valores enteros  en formato x.x
+- `acciones`: Número de acciones relacionadas con el financiamiento. Valores enteros  en formato entero
 
 
 ### 3. Realizar la solicitud
